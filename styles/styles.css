@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  background-color: #2a3132;
+}
+
+.container {
+  min-height: 80vh;
+  padding: 10vh 0;
+  display: block;
+  overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url("../images/mountain-background.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../images/mountain-background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.content {
+  color: white;
+  margin: 0 auto;
+  max-width: 21.875rem;
+  max-height: 100%;
+  width: 65vw;
+  background-color: #2a3132;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.content .title {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.content #task__input {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 25px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", monospace;
+}
+
+.content #task__input:focus {
+  outline: none;
+}
+
+.content .button__div {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+}
+
+.content .button__div .basic__button {
+  background-color: #763626;
+  font-size: 1rem;
+  font-family: "Times New Roman";
+  color: inherit;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.content .button__div .basic__button:hover {
+  background-color: #4d2015;
+}
+
+.content .button__div #add {
+  border-radius: 25px 0 0 25px;
+}
+
+.content .button__div #reset {
+  border-radius: 0 25px 25px 0;
+}
+
+.content .list {
+  text-align: center;
+}
+
+.content .list .list__element {
+  background-color: #336b87;
+  list-style: none;
+  font-size: 1rem;
+  height: 3rem;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+}
+
+.content .list .list__element .list__button {
+  background-color: inherit;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.content .list .list__element .list__button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */

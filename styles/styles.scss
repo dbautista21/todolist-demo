@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500&display=swap");
+@import "commonCSS";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  background-color: $Shadow;
+}
+.container {
+  min-height: 80vh;
+  padding: 10vh 0;
+  display: block;
+  overflow-x: hidden;
+  background: {
+    image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url("../images/mountain-background.jpeg");
+    size: cover;
+    attachment: fixed;
+    position: center center;
+  }
+}
+.content {
+  @include whiteText();
+  margin: 0 auto;
+  max-width: 21.875rem;
+  max-height: 100%;
+  width: 65vw;
+  background: {
+    color: $Shadow;
+  }
+  padding: 1rem;
+  border-radius: 30px;
+  .title {
+    @include marginTopBottom();
+    text-align: center;
+    font: {
+      size: 2.5rem;
+    }
+  }
+  #task__input {
+    width: 80%;
+    display: block;
+    @include marginTopBottom();
+    border-radius: 25px;
+    padding: 0.5rem 0.8rem;
+    font: {
+      size: 1.2rem;
+      family: "Times New Roman", monospace;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .button__div {
+    @include marginTopBottom();
+    display: flex;
+    height: 3rem;
+    .basic__button {
+      background-color: $Autumn;
+      font: {
+        size: 1rem;
+        family: "Times New Roman";
+      }
+      color: inherit;
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      cursor: pointer;
+      &:hover {
+        background-color: $DarkAutumn;
+      }
+    }
+    #add {
+      border-radius: 25px 0 0 25px;
+    }
+    #reset {
+      border-radius: 0 25px 25px 0;
+    }
+  }
+  .list {
+    text-align: center;
+    .list__element {
+      background-color: $Stone;
+      list-style: none;
+      font-size: 1rem;
+      height: 3rem;
+      border-radius: 25px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 1rem auto;
+      .list__button {
+        background-color: inherit;
+        padding: 0.5rem;
+        cursor: pointer;
+        @include whiteText();
+        border-radius: 50%;
+        margin: 0 1rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

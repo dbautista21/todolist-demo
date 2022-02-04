@@ -1,0 +1,10 @@
+@mixin whiteText() {
+  color: white;
+}
+@mixin marginTopBottom($margin: 1rem auto) {
+  margin: $margin;
+}
+$Shadow: #2a3132;
+$Autumn: #763626;
+$DarkAutumn: #4d2015;
+$Stone: #336b87;
